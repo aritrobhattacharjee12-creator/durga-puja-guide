@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Durga Puja Pandal Guide 2025</title>
+  <style>
+#welcomeScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #c2185b, #880e4f);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#welcomeScreen h1 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Logo */
+.welcome-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  padding: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  object-fit: contain;
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  #welcomeScreen h1 {
+    font-size: 22px;
+  }
+  .welcome-logo {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+  }
+}
+
+
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'SolaimanLipi', Arial, sans-serif;
+      background: #fff0f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 🔹 Header */
+    header {
+      background: linear-gradient(90deg, #880e4f, #c2185b);
+      color: white;
+      padding: 15px 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo {
+      display: block;
+      margin: 0 auto 8px auto;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background: white;
+      padding: 6px;
+      object-fit: contain;
+      box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    /* 🔹 Container */
+    .container {
+      max-width: 100%;
+      margin: 15px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      padding: 15px;
+    }
+
+    /* 🔹 Section Title */
+    h2 {
+      border-bottom: 3px solid #c2185b;
+      margin: 30px 0 20px 0;
+      font-size: 22px;
+      font-weight: 800;
+      border-radius: 8px;
+      padding: 10px 15px;
+      color: #880e4f;
+    }
+    h2::before { content: "🪔 "; }
+
+    /* 🔹 North/South section backgrounds */
+    .north-section { background: #fff0f6cc; padding: 10px 15px; border-radius: 10px; }
+    .south-section { background: #ffe0ebcc; padding: 10px 15px; border-radius: 10px; }
+
+    /* 🔹 Search Box */
+    #searchBox {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      border: 2px solid #c2185b;
+      border-radius: 8px;
+      outline: none;
+      box-sizing: border-box;
+      position: sticky;
+      top: 75px;
+      z-index: 900;
+      background: white;
+    }
+
+    /* 🔹 List */
+    ul { list-style: none; padding: 0; margin: 0; }
+    li {
+      margin: 12px 0;
+      padding: 12px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      border-bottom: 1px solid #eee;
+      font-size: 16px;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 0.5s forwards;
+    }
+    li:nth-child(1) { animation-delay: 0.05s; }
+    li:nth-child(2) { animation-delay: 0.1s; }
+    li:nth-child(3) { animation-delay: 0.15s; }
+    li:nth-child(4) { animation-delay: 0.2s; }
+    li:nth-child(5) { animation-delay: 0.25s; }
+    li:nth-child(6) { animation-delay: 0.3s; }
+    li:nth-child(7) { animation-delay: 0.35s; }
+    li:nth-child(8) { animation-delay: 0.4s; }
+    li:nth-child(9) { animation-delay: 0.45s; }
+    li:last-child { border-bottom: none; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .pandal-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: #010101;
+      margin-right: 15px;
+      flex: 1;
+    }
+
+    /* 🔹 Map link button */
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      padding: 6px 12px;
+      background: linear-gradient(90deg, #c2185b, #880e4f);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    a img {
+      width: 24px;
+      height: 24px;
+      margin-right: 6px;
+    }
+    a:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+      background: linear-gradient(90deg, #880e4f, #c2185b);
+    }
+
+    /* 🔹 Responsive */
+    @media (max-width: 480px) {
+      header .logo { height: 60px; width: 60px; }
+      header h1 { font-size: 18px; }
+      #searchBox { font-size: 13px; }
+      li { font-size: 14px; flex-direction: column; align-items: flex-start; }
+      a { font-size: 13px; margin-top: 6px; width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <body>
+  <<div id="welcomeScreen">
+  <div class="welcome-content">
+    <img src="https://events.brimbank.vic.gov.au/wp-content/uploads/formidable/3/Durga-Puja-2025website-1.png" alt="Durga Puja Logo" class="welcome-logo">
+    <h1>দুর্গা উৎসব ২০২৫ সবাইকে স্বাগতম!</h1>
+  </div>
+</div>
+
+
+  <!-- Your header and main content come after -->
+  <header>...</header>
+  <div class="container">...</div>
+</body>
+
+  
+    
+  <header>
+    <img src="https://events.brimbank.vic.gov.au/wp-content/uploads/formidable/3/Durga-Puja-2025website-1.png" alt="Durga Puja Logo" class="logo">
+    <h1>দুর্গা উৎসব ২০২৫</h1>
+  </header>
+
+  <div class="container">
+    <input type="text" id="searchBox" placeholder="প্যান্ডেলের নাম দিয়ে সার্চ করুন..." onkeyup="filterPandal()" />
+
+    <!-- North Kolkata -->
+    <div class="section north-section">
+      <h2>North Kolkata প্যান্ডেল</h2>
+      <ul id="north-pujas">
+        <li><span class="pandal-name">Hatibagan Sarbojonin (হাতিবাগান সর্বজনীন)</span> 
+          <a href="https://maps.app.goo.gl/fRskmWdE5Fb2NsMt5" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+          </a>
+        </li>
+        <li><span class="pandal-name">Santosh Mitra Square (সন্তোষ মিত্র স্কোয়ার)</span> 
+          <a href="https://maps.app.goo.gl/hTH8sqcLw859na747" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+          </a>
+        </li>
+    <li><span class="pandal-name">Baghbazar Sarbojanin (বাঘবাজার সর্বজনীন দুর্গোৎসব)</span> 
+      <a href="https://maps.app.goo.gl/kvfPCzWjsMyx293y8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Kumartuli Park (কুমারটুলি পার্ক)</span> 
+      <a href="https://maps.app.goo.gl/8zHPDFuqVa3MSgZ89" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Nalin Sarkar St (নলিন সরকার স্ট্রিট)</span> 
+      <a href="https://maps.app.goo.gl/CVowcGGR75AL9uXM6" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Dum Dum Park Tarun Sangha (দমদম পার্ক তরুণ সংঘ)</span> 
+      <a href="https://maps.app.goo.gl/zLPdDZhSntsc3Qjj8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Sree Bhumi Sporting Club (শ্রীভূমি স্পোর্টিং ক্লাব)</span> 
+      <a href="https://maps.app.goo.gl/cbPR6xwiMiWNPQ8v5" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Dum Dum Park Bharat Chakra (দমদম পার্ক ভারত চক্র)</span> 
+      <a href="https://maps.app.goo.gl/7Vemykg9BaJseT8r6" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Ahiritola Jubak Brinda Durgapuja (আহিরিটোলা যুবকবৃন্দ)</span> 
+      <a href="https://maps.app.goo.gl/FYe1nZmXEf14wJFw6" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Arjunpur Amra Sabai Club (অর্জুনপুর আমরা সবাই ক্লাব)</span> 
+      <a href="https://maps.app.goo.gl/Uj7sG8j6FAn7L2Uz8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Suruchi Sangha (সুরুচি সংঘ)</span> 
+      <a href="https://maps.app.goo.gl/tZ5UeyAM3ifpYgTR9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Sovabazar Rajbari (শোভাবাজার রাজবাড়ী)</span> 
+      <a href="https://maps.app.goo.gl/sRPhj2HbLtpYV4X4A" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Tala Prattoy (টালা প্রত্যয় দুর্গাপূজা)</span> 
+      <a href="https://maps.app.goo.gl/bPsKdY89FemAX1xF8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Tala Barowari Durga Puja (টালা বারোয়ারি দুর্গা পূজা প্যান্ডেল)</span> 
+      <a href="https://maps.app.goo.gl/mKTn3iQ4KuMEPyvf8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Sikdar Bagan (সিকদার বাগান দুর্গাপূজা)</span> 
+      <a href="https://maps.app.goo.gl/RZWJ1K9qLhGHSsWN9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Jagat Mukherjee Park (জগৎ মুখার্জী পার্ক)</span> 
+      <a href="https://maps.app.goo.gl/QWxiizFpmZeWZXxAA" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Kashi Bose Lane (কাশি বোস লেন সর্বজনীন)</span> 
+      <a href="https://maps.app.goo.gl/gQJ9sRdXv22L5hrJ9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Chaltabagan (চালতাবাগান লোহা পট্টি)</span> 
+      <a href="https://maps.app.goo.gl/jJ2CRkkWYEBwFzyx5" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">College Square Durga Puja (বিদ্যাসাগর পার্ক কলেজ স্কোয়ার দুর্গা পূজা প্যান্ডেল)</span> 
+      <a href="https://maps.app.goo.gl/ebYJfpd2FbvmRGTX8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Muhammad Ali Park (মহম্মদ আলী পার্ক)</span> 
+      <a href="https://maps.app.goo.gl/zXxdeXnrHK5qx8H17" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Chorebagan Sarbojonin (চোরবাগান সর্বজনীন)</span> 
+      <a href="https://maps.app.goo.gl/ZFuPj4vtMVri2KUd6" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Hatibagan NabinPally Durga Puja (হাতিবাগান নবীন পল্লী)</span> 
+      <a href="https://maps.app.goo.gl/venJH2edEddkhVur9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+     <li><span class="pandal-name">North Tridhara Durga Puja(নর্থ ত্রিধারা দুর্গা পুজো)</span> 
+      <a href="https://maps.app.goo.gl/D8USHpDGU9G8A8Yw7" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Hatkhola Gosaipara Sarbojonin Durgotsab(হাটখোলা গোঁসাইপাড়া সর্বজনীন দুর্গোৎসব)</span> 
+      <a href="https://maps.app.goo.gl/yxiTbdvaauAQmt7Q6" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name"> Sovabazar Beniatola Sarbojonin Durgotsab(শোভাবাজার বেনিয়াটোলা সার্বজনীন দুর্গোৎসব)</span> 
+      <a href="https://maps.app.goo.gl/piWGFVUx43mHXzuY9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+     <li><span class="pandal-name">Ahiritola Sarbojonin (আহিরীটোলা সর্বজনীন)</span> 
+      <a href="https://maps.app.goo.gl/P1DqhfE9aJSjGrzn7" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">20 Palli Sarbojani Durgotsab (20 পল্লী সর্বজনী দুর্গোৎসব)</span> 
+      <a href="https://maps.app.goo.gl/6xNMByPkUs9kTLVe9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Ultadanga Sangrami(উল্টোডাঙ্গা সংগ্রামী)</span> 
+      <a href="https://maps.app.goo.gl/hy9uL7UP4Hji5K2v9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Surir Bagan Sarbojanin Durgapuja(শুঁড়ির বাগান সার্বজনীন দুর্গাপূজা)</span> 
+      <a href="https://maps.app.goo.gl/367QNXT2bZ3ZKn5R8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Telenga Bagan(তেলেঙ্গা বাগান)</span> 
+      <a href="https://maps.app.goo.gl/ePy4hAUiq59uem2A7" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Karbagan Sarbojanin Durgotsab(উল্টোডাঙা করবাগান সার্বজনীন দুর্গোৎসব)</span> 
+      <a href="https://maps.app.goo.gl/xjcKyM2jAgexVjAKA" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+     <li><span class="pandal-name">Ultadanga Pallyshree Durga Puja(উল্টোডাঙ্গা পল্লীশ্রী দুর্গা পূজা)</span> 
+      <a href="https://maps.app.goo.gl/RDMRXePAMBhfjrt86" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Kabiraj Bagan Sarbojonin Durgotsav(কবিরাজ বাগান সার্বজনীন দুর্গা পূজা)</span> 
+      <a href="https://maps.app.goo.gl/XcadFxLYk82EZb796" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Gouriberia Sarbojanin Durgotsab (গৌরিবেরিয়া সর্বজনীন দুর্গোৎসব)</span> 
+      <a href="https://maps.app.goo.gl/3Pjk9Bmpd7oxSuzS7" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Sanghatirtha Puja Committee (সংঘতীর্থ পূজা কমিটি)</span> 
+      <a href="https://maps.app.goo.gl/E3ga5kyW9zeYychi6" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Dakshinpara Durgotsab Committee (দক্ষিণপাড়া দুর্গোৎসব কমিটি)</span> 
+      <a href="https://maps.app.goo.gl/BWf9EnMbHqQtC6wj8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Dum Dum Park Sarbojanin  (দম দম পার্ক সর্বজনীন)</span> 
+      <a href="https://maps.app.goo.gl/FNK8ujyfCaNoToSC8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Dum Dum Tarun Dal Club (দম দম তরুণ দল ক্লাব)</span> 
+      <a href="https://maps.app.goo.gl/mBqAMbr6zoPWVchz9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Dakshindari Youth (দক্ষিণদাড়ি ইউথ)</span> 
+      <a href="https://maps.app.goo.gl/jAXqZ6Spdxy5M64L9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Kankurgachi Chalantika Club (কাঁকুড়গাছি চলন্তিকা ক্লাব)</span> 
+      <a href="https://maps.app.goo.gl/wGdoVcVhYag6Qin57" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+  </ul>
+</div>
+      </ul>
+    </div>
+
+    <!-- South Kolkata -->
+    <div class="section south-section">
+      <h2>South Kolkata প্যান্ডেল</h2>
+      <ul id="south-pujas">
+        <li><span class="pandal-name">Singhi Park (সিঙ্গি পার্ক)</span> 
+          <a href="https://maps.app.goo.gl/vbdd6DDawJ6ZuYed6" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+          </a>
+        </li>
+        <li><span class="pandal-name">Ekdalia Evergreen Club (একডালিয়া এভারগ্রীন)</span> 
+          <a href="https://maps.app.goo.gl/NBWKD4oJj3fNxz5K8" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+          </a>
+        </li>
+       
+    <li><span class="pandal-name">Deshapriya Park (দেশপ্রিয় পার্ক)</span> 
+      <a href="https://maps.app.goo.gl/we6xdUjzPu83kSXm9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Chetla Agrani Club (চেতলা অগ্রনী ক্লাব)</span> 
+      <a href="https://maps.app.goo.gl/sApD5Akxe4FVjjd86" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Mudiali Club (মুদিয়ালী ক্লাব)</span> 
+      <a href="https://maps.app.goo.gl/86V4gNF3esEfUbsw5" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Badamtala Ashar Sangha (বাদামতলা আশার সংঘ)</span> 
+      <a href="https://maps.app.goo.gl/Ux2xbkSxnWxtbFyv6" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Jodhpur Park (জোধপুর পার্ক)</span> 
+      <a href="https://maps.app.goo.gl/SAgRXqiWkw3ALLyJ9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Hindustan Park (হিন্দুস্থান পার্ক)</span> 
+      <a href="https://maps.app.goo.gl/qFcmnzt2X8WKnMs66" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Naktala Udayan Sangha (নাকতলা উদয়ন সংঘ)</span> 
+      <a href="https://maps.app.goo.gl/9Z75qtjymgmK3bgw8" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">66 Pally (৬৬ পল্লী)</span> 
+      <a href="https://maps.app.goo.gl/DTeLiAeeFbJHPpRh9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Ballygunge Cultural Association (বালিগঞ্জ কালচারাল)</span> 
+      <a href="https://maps.app.goo.gl/THsCpY5k75MPrTX68" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Samaj Sebi Sangha (সমাজ সেবী সংঘ)</span> 
+      <a href="https://maps.app.goo.gl/CWeRykKUbi7GQHni9" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Bhowanipur 75 Palli (ভবানীপুর ৭৫ পল্লী)</span> 
+      <a href="https://maps.app.goo.gl/uNwKS2PWfavCB9K6A" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Bosepukur Sitala Mandir (বোসপুকুর শীতলা মন্দির)</span> 
+      <a href="https://maps.app.goo.gl/uoPyR5peLfi2yS859" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Tridhara Sammilani (ত্রিধারা সম্মিলনী)</span> 
+      <a href="https://maps.app.goo.gl/JfPUBhAc29CW62PT7" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+    <li><span class="pandal-name">Hindusthan Club (হিন্দুস্তান ক্লাব)</span> 
+      <a href="https://maps.app.goo.gl/iHHCMZ7CVbgBWbui7" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/16/684/684908.png"> see map
+      </a>
+    </li>
+  </ul>
+</div>
+        
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function filterPandal() {
+      const query = document.getElementById('searchBox').value.toLowerCase();
+      const allLists = [...document.querySelectorAll('#north-pujas li'), ...document.querySelectorAll('#south-pujas li')];
+      allLists.forEach(li => {
+        const name = li.querySelector('.pandal-name').textContent.toLowerCase();
+        li.style.display = name.includes(query) ? 'flex' : 'none';
+      });
+    }
+  </script>
+  <script>
+  window.addEventListener('load', () => {
+    const screen = document.getElementById('welcomeScreen');
+    setTimeout(() => {
+      screen.style.opacity = '0';           // fade out
+      screen.style.transition = 'opacity 0.5s';
+      setTimeout(() => {
+        screen.style.display = 'none';     // hide completely
+      }, 500);
+    }, 2000); // 2000ms = 2 seconds delay
+  });
+</script>
+</body>
+</html>
